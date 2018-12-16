@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+nav {
+  background-image: url("background.jpg");
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 24px;
+  color: #f6993f;
+}
+.web-ul {
+  position: absolute;
+  right: 5%;
+  list-style-type: none;
+  color: bisque;
+}
+.web-ul li {
+  display: inline;
+  padding: 8px 16px;
+}
