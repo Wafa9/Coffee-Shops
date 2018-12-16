@@ -2,6 +2,10 @@
 <% if user_signed_in? && current_user.is_admin? %>
   <%= link_to 'Add New Shop', new_shop_path %>
 <% end %>
-<% @shops.each do |s| %>
-  <p><%= s.name %></p>
-<% end %>
+<ul>
+  <% @shops.each do |s| %>
+    <li>
+      <%= link_to s.name, s %>
+    </li>
+  <% end %>
+</ul>
