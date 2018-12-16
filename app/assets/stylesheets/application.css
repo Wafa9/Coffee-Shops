@@ -14,13 +14,14 @@
  *= require_self
  */
 .header {
-  background-image: url("back3.png");
+  background-image: url("940ec697671b181d54f2ee200fed5e74.png");
   background-size: cover;
-  height: 500px;
+  height: 700px;
   background-repeat: no-repeat;
   font-family: "Shadows Into Light", cursive;
-  font-size: 24px;
-  color: white;
+  font-size: 30px;
+  color: #e9967a;
+  margin: 0;
   /* opacity: 0.8; */
 }
 .web-ul {
@@ -35,8 +36,12 @@
 }
 .shops {
   background: gray;
-  opacity: 0.2;
+  /* opacity: 0.2; */
 }
 .shops img {
-  opacity: none;
+  /* opacity: none; */
+}
+.shop img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
