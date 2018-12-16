@@ -37,9 +37,10 @@
 .shops {
   background: rgba(181, 181, 181, 0.5);
   /* opacity: 0.2; */
-  /* display: flex;
-  /* flex-wrap: wrap; 
-  justify-content: center; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  display: inline;
 }
 .shop-image {
   opacity: 1;
@@ -47,8 +48,4 @@
 }
 .shop-image:hover {
   opacity: 0.2;
-}
-.Apaq-image {
-  width: 200px;
-  height: 200px;
 }
