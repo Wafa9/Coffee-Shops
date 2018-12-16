@@ -13,14 +13,15 @@
  *= require_tree .
  *= require_self
  */
-nav {
-  background-image: url("background.jpg");
+.header {
+  background-image: url("back3.png");
   background-size: cover;
   height: 500px;
   background-repeat: no-repeat;
   font-family: "Shadows Into Light", cursive;
   font-size: 24px;
-  color: #f6993f;
+  color: white;
+  /* opacity: 0.8; */
 }
 .web-ul {
   position: absolute;
@@ -31,4 +32,11 @@ nav {
 .web-ul li {
   display: inline;
   padding: 8px 16px;
+}
+.shops {
+  background: gray;
+  opacity: 0.2;
+}
+.shops img {
+  opacity: none;
 }
