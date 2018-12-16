@@ -1,0 +1,26 @@
+<%= form_for @shop do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :logo %>
+    <%= f.file_field :logo %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :website %>
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter %>
+    <%= f.text_field :twitter %>
+  </div>
+  <div class="field">
+    <%= f.label :instagram %>
+    <%= f.text_field :instagram %>
+  </div>
+<% end %>
