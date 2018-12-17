@@ -16,7 +16,7 @@
 .header {
   background-image: url("940ec697671b181d54f2ee200fed5e74.png");
   background-size: cover;
-  height: 700px;
+  /* height: 700px; */
   background-repeat: no-repeat;
   font-family: "Shadows Into Light", cursive;
   font-size: 30px;
@@ -53,4 +53,7 @@
   .shop-image {
     width: calc(50% - 40px);
   }
+}
+.video {
+  width: 100%;
 }
