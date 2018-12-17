@@ -40,12 +40,21 @@
   /* display: flex; */
   /* flex-wrap: wrap; */
   /* justify-content: center; */
-  display: inline;
+  /* display: inline; */
 }
 .shop-image {
+  width: calc(100% / 3 - 60px);
   opacity: 1;
-  transition: all 0.5s;
+  transition: opacity 0.5s;
+  float: left;
+  margin: 10px;
 }
 .shop-image:hover {
   opacity: 0.2;
+}
+
+@media (max-width: 800px) {
+  .shop-image {
+    width: calc(50% - 40px);
+  }
 }
