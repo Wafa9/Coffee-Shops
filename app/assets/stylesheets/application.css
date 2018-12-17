@@ -36,18 +36,14 @@
 }
 .shops {
   background: rgba(181, 181, 181, 0.5);
-  /* opacity: 0.2; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* display: inline; */
 }
+
 .shop-image {
   width: calc(100% / 3 - 60px);
   opacity: 1;
   transition: opacity 0.5s;
   float: left;
-  margin: 10px;
+  margin: 4px;
 }
 .shop-image:hover {
   opacity: 0.2;
