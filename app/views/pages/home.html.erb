@@ -1,19 +1,15 @@
-
-
-<div class="row"> 
-  <div class="column">
- <%=image_tag "Apaq.png", id: "Apaq-image" ,class: "shop-image"%>
-    <%=image_tag "cAF.png", id: "CAF-image" ,class: "shop-image"%>
-<%=image_tag "1m2.png", id: "1m2-image" ,class: "shop-image"%>
-   <%=image_tag "12.png", id: "12-image" ,class: "shop-image"%>
-   <%=image_tag "beet.png", id: "beet-image" ,class: "shop-image"%>
-  
-  </div>
-  <div class="column">
-    <%=image_tag "dose.png", id: "dose-image" ,class: "shop-image"%>
-   <%=image_tag "Cam.png", id: "Cam-image" ,class: "shop-image"%>
-    <%=image_tag "drip.png", id: "drip-image" ,class: "shop-image"%>
-     <%=image_tag "bask.png", id: "bask-image" ,class: "shop-image"%>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<div class="shops">
+  <div class="grid-sizer"></div>
+  <%=image_tag "Apaq.png", id: "Apaq-image" ,class: "shop-image"%>
+  <%=image_tag "cAF.png", id: "CAF-image" ,class: "shop-image"%>
+  <%=image_tag "1m2.png", id: "1m2-image" ,class: "shop-image"%>
+  <%=image_tag "12.png", id: "12-image" ,class: "shop-image"%>
+  <%=image_tag "beet.png", id: "beet-image" ,class: "shop-image"%>
+  <%=image_tag "dose.png", id: "dose-image" ,class: "shop-image"%>
+  <%=image_tag "Cam.png", id: "Cam-image" ,class: "shop-image"%>
+  <%=image_tag "drip.png", id: "drip-image" ,class: "shop-image"%>
+  <%=image_tag "bask.png", id: "bask-image" ,class: "shop-image"%>
   <%=image_tag "exeer.png", id: "exeer-image" ,class: "shop-image"%>
   
   </div>  
@@ -26,3 +22,13 @@
   </div>
  
 </div>
+<script>
+  $('.shops').isotope({
+  // options...
+  itemSelector: '.shop-image',
+  percentPosition: true,
+  masonry: {
+  
+  }
+  });
+</script>
