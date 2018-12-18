@@ -14,67 +14,87 @@
  *= require_self
  */
 .header {
-  /* background-image: url("940ec697671b181d54f2ee200fed5e74.png"); */
-  /* background-size: cover; */
-  /* height: 700px; */
-  /* background-repeat: no-repeat; */
-  font-family: "Shadows Into Light", cursive;
-  font-size: 30px;
-  color: #e9967a;
-  margin: 0;
-  /* opacity: 0.8; */
+	/* background-image: url("940ec697671b181d54f2ee200fed5e74.png"); */
+	/* background-size: cover; */
+	/* height: 700px; */
+	/* background-repeat: no-repeat; */
+	font-family: "Shadows Into Light", cursive;
+	font-size: 30px;
+	color: #e9967a;
+	margin: 0;
+	/* opacity: 0.8; */
+}
+
+.header p {
+	margin: 0;
 }
 .header a {
-  color: #e9967a;
-  text-decoration: none;
+	color: #e9967a;
+	text-decoration: none;
 }
 .web-ul {
-  position: absolute;
-  right: 5%;
-  list-style-type: none;
-  color: bisque;
+	position: absolute;
+	right: 5%;
+	list-style-type: none;
+	color: bisque;
 }
 .web-ul li {
-  display: inline;
-  padding: 8px 16px;
+	display: inline;
+	padding: 8px 16px;
 }
 .shops {
-  background: rgba(181, 181, 181, 0.5);
+	background: rgba(181, 181, 181, 0.5);
 }
 
 .shop-image {
-  width: calc(100% / 3 - 60px);
-  opacity: 1;
-  transition: opacity 0.5s;
-  float: left;
-  margin: 4px;
+	width: calc(100% / 3 - 60px);
+	opacity: 1;
+	transition: opacity 0.5s;
+	float: left;
+	margin: 4px;
 }
 .shop-image:hover {
-  opacity: 0.2;
+	opacity: 0.2;
 }
 
 @media (max-width: 800px) {
-  .shop-image {
-    width: calc(50% - 40px);
-  }
+	.shop-image {
+		width: calc(50% - 40px);
+	}
 }
 .video {
-  width: 100%;
+	width: 100%;
 }
 
 #map {
-  height: 100%;
+	height: 100%;
 }
 /* Optional: Makes the sample page fill the window. */
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .button {
-  background: wheat;
-  height: 2.75rem;
-  margin: 1em auto auto;
+	background: wheat;
+	height: 2.75rem;
+	margin: 1em auto auto;
+}
+
+.search-form {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.search-bar {
+	margin: 0 auto;
+	padding: 3px 5px;
+	display: block;
+	width: 80%;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	text-align: center;
+	outline: none;
 }

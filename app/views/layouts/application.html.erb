@@ -14,6 +14,9 @@
       <%= render partial: 'layouts/nav' %>
       <h1 class="web-name">Mazaj</h1>
       <p>Find the coffee shop that suits you.</p>
+      <form action="/search" method="GET" class="search-form">
+        <input id="term" name="term" type="text" placeholder="Search for Coffee Shop" class="search-bar">
+      </form>
       <%# <input type="text" name="lname" > %>
     </div>
     <p class="notice"><%= notice %></p>
