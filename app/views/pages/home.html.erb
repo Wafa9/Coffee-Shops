@@ -1,27 +1,49 @@
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<div class="shops">
-  <div class="grid-sizer"></div>
-  <%=image_tag "Apaq.png", id: "Apaq-image" ,class: "shop-image"%>
-  <%=image_tag "cAF.png", id: "CAF-image" ,class: "shop-image"%>
-  <%=image_tag "1m2.png", id: "1m2-image" ,class: "shop-image"%>
-  <%=image_tag "12.png", id: "12-image" ,class: "shop-image"%>
-  <%=image_tag "beet.png", id: "beet-image" ,class: "shop-image"%>
-  <%=image_tag "dose.png", id: "dose-image" ,class: "shop-image"%>
-  <%=image_tag "Cam.png", id: "Cam-image" ,class: "shop-image"%>
-  <%=image_tag "drip.png", id: "drip-image" ,class: "shop-image"%>
-  <%=image_tag "bask.png", id: "bask-image" ,class: "shop-image"%>
-  <%=image_tag "exeer.png", id: "exeer-image" ,class: "shop-image"%>
-  
-  </div>  
-  <div class="column">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
+<div class="grid">
+  <div class="shops">
+    <%=image_tag "12.png", id: "12-image" ,class: "shop-image"%>
+    <%=image_tag "dose.png", id: "dose-image" ,class: "shop-image"%>
+    <%=image_tag "drip.png", id: "drip-image" ,class: "shop-image"%>
+    <%=image_tag "Apaq.png", id: "Apaq-image" ,class: "shop-image"%>
+    <%=image_tag "Less.png", id: "Less-image" ,class: "shop-image"%>
+    <%=image_tag "J cafe.png", id: "Jcafe-image" ,class: "shop-image"%>
+    <%=image_tag "Cam.png", id: "Cam-image" ,class: "shop-image"%>
+    <%=image_tag "bask.png", id: "bask-image" ,class: "shop-image"%>
+    <%=image_tag "exeer.png", id: "exeer-image" ,class: "shop-image"%>
     <%=image_tag "Fifve.png", id: "Fifve-image" ,class: "shop-image"%>
-  <%=image_tag "J cafe.png", id: "Jcafe-image" ,class: "shop-image"%>
-  <%=image_tag "jolt.png", id: "jolt-image" ,class: "shop-image"%>
-  <%=image_tag "Less.png", id: "Less-image" ,class: "shop-image"%>
-  <%=image_tag "mekyal.png", id: "mekyal-image" ,class: "shop-image"%>
+    <%=image_tag "1m2.png", id: "1m2-image" ,class: "shop-image"%>
+    <%=image_tag "beet.png", id: "beet-image" ,class: "shop-image"%>
+    <%=image_tag "jolt.png", id: "jolt-image" ,class: "shop-image"%>
+    <%=image_tag "cAF.png", id: "CAF-image" ,class: "shop-image"%>
+    <%=image_tag "mekyal.png", id: "mekyal-image" ,class: "shop-image"%>
   </div>
- 
 </div>
+
+
+<div class="slick w3-display-container">
+ <%=image_tag "l1m2.png", class: "mySlides" %>
+   <%=image_tag "l12.png", class: "mySlides" %>
+   <%=image_tag "lapq.png", class: "mySlides" %>
+   <%=image_tag "lbeet.png", class: "mySlides" %>
+ <%=image_tag  "lbsc.png", class: "mySlides" %>
+<%=image_tag "lCAF.png", class: "mySlides" %>
+<%=image_tag "lCamel.png", class: "mySlides" %>
+<%=image_tag "lDose.png" , class: "mySlides" %>
+<%=image_tag "ldrip.png" , class: "mySlides" %>
+<%=image_tag "lex.png", class: "mySlides" %>
+<%=image_tag "lfive_elephants.png" , class: "mySlides" %>
+<%=image_tag "lJ.png" , class: "mySlides" %>
+<%=image_tag "lJOLT.png" , class: "mySlides" %>
+<%=image_tag "lLess.png", class: "mySlides" %>
+<%=image_tag "lmekal.png" , class: "mySlides" %>
+<%=image_tag "lslalat.png" , class: "mySlides" %>
+
+</div>
+
+
 <script>
   $('.shops').isotope({
   // options...
@@ -31,4 +53,14 @@
   
   }
   });
+
+  
+$(document).ready(function(){
+  $('.slick').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true
+  });
+});
+	
 </script>

@@ -25,29 +25,48 @@
   /* opacity: 0.8; */
 }
 .web-ul {
-  position: absolute;
+  /* position: absolute;
   right: 5%;
   list-style-type: none;
-  color: bisque;
+  color: bisque; */
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
+
 .web-ul li {
-  display: inline;
-  padding: 8px 16px;
+  /* display: inline;
+  padding: 8px 16px; */
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
 }
 .shops {
   background: rgba(181, 181, 181, 0.5);
-  /* opacity: 0.2; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* display: inline; */
 }
+
 .shop-image {
   width: calc(100% / 3 - 60px);
   opacity: 1;
   transition: opacity 0.5s;
   float: left;
-  margin: 10px;
+  margin: 4px;
 }
 .shop-image:hover {
   opacity: 0.2;
@@ -58,3 +77,17 @@
     width: calc(50% - 40px);
   }
 }
+
+.slick {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.slick img {
+  max-height: 300px;
+}
+
+body .slick-next:before, body .slick-next:after {
+  color: black
+}
+
