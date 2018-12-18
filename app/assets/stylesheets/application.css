@@ -72,3 +72,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.button {
+  background: wheat;
+  height: 2.75rem;
+  margin: 1em auto auto;
+}
