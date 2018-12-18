@@ -14,34 +14,38 @@
  *= require_self
  */
 
- #logo1 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
+ 
+ .header {
+   
+   background-size: cover;
+   height: 700px;
+   background-repeat: no-repeat;
+   font-family: "Shadows Into Light", cursive;
+   font-size: 30px;
+   color: #e9967a;
+   margin: 0;
+   /* opacity: 0.8; */
  }
-
-.header {
-  background-image: url("940ec697671b181d54f2ee200fed5e74.png");
-  background-size: cover;
-  height: 700px;
-  background-repeat: no-repeat;
-  font-family: "Shadows Into Light", cursive;
-  font-size: 30px;
-  color: #e9967a;
-  margin: 0;
-  /* opacity: 0.8; */
-}
-.web-ul {
-  /* position: absolute;
-  right: 5%;
-  list-style-type: none;
-  color: bisque; */
+   #logo1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+   left:1150px;
+   
+   }
   
-  list-style-type: none;
+  .web-ul {
+    /* position: absolute;
+    right: 5%;
+    list-style-type: none;
+    color: bisque; */
+    
+    list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: black;
+  height: 100px;
 }
 
 .web-ul li {
@@ -58,7 +62,9 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  /* background-color: #111; */
+  background-color:white;
+  color: black;
 }
 
 .active {
