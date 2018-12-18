@@ -14,15 +14,19 @@
  *= require_self
  */
 .header {
-  background-image: url("940ec697671b181d54f2ee200fed5e74.png");
-  background-size: cover;
+  /* background-image: url("940ec697671b181d54f2ee200fed5e74.png"); */
+  /* background-size: cover; */
   /* height: 700px; */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   font-family: "Shadows Into Light", cursive;
   font-size: 30px;
   color: #e9967a;
   margin: 0;
   /* opacity: 0.8; */
+}
+.header a {
+  color: #e9967a;
+  text-decoration: none;
 }
 .web-ul {
   position: absolute;
