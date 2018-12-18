@@ -5,6 +5,7 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find_by(id: params[:id])
+    @product = Product.new
   end
 
   def new
@@ -17,9 +18,13 @@ class ShopsController < ApplicationController
   end
 
   def edit
+    @shop = Shop.find_by(id: params[:id])
   end
 
   def update
+    shop = Shop.find_by(id: params[:id])
+    shop.update(shop_params)
+    redirect_to shop
   end
 
   private
