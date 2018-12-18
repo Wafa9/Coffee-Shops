@@ -13,6 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ #logo1 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+ }
+
 .header {
   background-image: url("940ec697671b181d54f2ee200fed5e74.png");
   background-size: cover;
@@ -34,7 +41,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 .web-ul li {
