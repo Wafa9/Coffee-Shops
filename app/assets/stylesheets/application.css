@@ -12,86 +12,82 @@
  *
  *= require_tree .
  *= require_self
- */
- 
- 
- 
- .container:hover .overlay {
-  opacity: .5;
+*/
+
+.container:hover .overlay {
+	opacity: 0.5;
 }
 
- .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
- 
- .header {
-   
-   background-size: cover;
-   height: 700px;
-   background-repeat: no-repeat;
-   font-family: "Shadows Into Light", cursive;
-   font-size: 30px;
-   color: #e9967a;
-   margin: 0;
-   /* opacity: 0.8; */
- }
-   #logo1 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-   left:1150px;
-   
-   }
-  
-  .web-ul {
-    /* position: absolute;
+
+.header {
+	/* background-size: cover;
+	height: 700px;
+	background-repeat: no-repeat; */
+	font-family: "Shadows Into Light", cursive;
+	font-size: 30px;
+	color: #e9967a;
+	margin: 0;
+	/* opacity: 0.8; */
+}
+#logo1 {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 1150px;
+}
+
+.web-ul {
+	/* position: absolute;
     right: 5%;
     list-style-type: none;
     color: bisque; */
-    
-    list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-  height: 100px;
-  width: 1300px;
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	height: 100px;
+	width: 1300px;
 }
 
 .web-ul li {
-  /* display: inline;
+	/* display: inline;
   padding: 8px 16px; */
-  float: left;
+	float: left;
 }
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  /* background-color: #111; */
-  background-color:white;
-  color: black;
+	/* background-color: #111; */
+	background-color: white;
+	color: black;
 }
 
 .active {
-  background-color: #4CAF50;
+	background-color: #4caf50;
 }
 .shops {
-  background: rgba(181, 181, 181, 0.5);
-  top: 110px;
-    left: 40px;
+	background: rgba(181, 181, 181, 0.5);
+	top: 110px;
+	left: 40px;
 }
 
 .shop-image {
@@ -112,31 +108,28 @@ li a:hover:not(.active) {
 }
 
 .slick {
-  width: 250px;
-  margin: 0 auto;
-  /* margin-bottom: 130px; */
+	width: 250px;
+	margin: 0 auto;
+	/* margin-bottom: 130px; */
 }
 
 .slick img {
-  max-height: 250px;
-  position: relative;
-  /* top: 150px; */
-  border-radius: 20%;
-
+	max-height: 250px;
+	position: relative;
+	/* top: 150px; */
+	border-radius: 20%;
 }
 
-body .slick-next:before, body .slick-next:after {
-  color: black
+body .slick-next:before,
+body .slick-next:after {
+	color: black;
 }
 
-.slick-dots{
-
-  position: absolute;
-  top: 350px;
+.slick-dots {
+	position: absolute;
+	top: 350px;
 }
 
-.grid{
-  margin-bottom: 130px;
+.grid {
+	margin-bottom: 130px;
 }
-
-

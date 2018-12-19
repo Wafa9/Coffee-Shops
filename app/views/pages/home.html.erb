@@ -1,29 +1,16 @@
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
 
-
-
-
-
-
-
+<div>
+  <%= video_tag "cafe1.mp4", autoplay: :autoplay, muted: :muted ,class: "video" %>
+</div>
 
 
 <div class="grid">
   <div class="shops">
-<<<<<<< HEAD
-     <div class="overlay">
-=======
     <% @shops.each do |shop| %>
       <%= cl_image_tag shop.logo, class: "shop-image" %>
     <% end %>
     <%# cl_image_tag @shop.logo %>
->>>>>>> d8903845dae3f1df711058a9aa47829168598dd5
     <%=image_tag "12.png", id: "12-image" ,class: "shop-image"%>
-    <div class="text">12 Cups</div>
-  </div>
     <%=image_tag "dose.png", id: "dose-image" ,class: "shop-image"%>
     <%=image_tag "drip.png", id: "drip-image" ,class: "shop-image"%>
     <%=image_tag "Apaq.png", id: "Apaq-image" ,class: "shop-image"%>
@@ -42,58 +29,27 @@
 </div>
 
 
-<div class="slick w3-display-container">
- <%=image_tag "lo1m2.png", class: "mySlides" %>
-   <%=image_tag "l12.png", class: "mySlides" %>
-   <%=image_tag "loapq.png", class: "mySlides" %>
-   <%=image_tag "lbeet.png", class: "mySlides" %>
- <%=image_tag  "logbsc.png", class: "mySlides" %>
-<%=image_tag "locaf.png", class: "mySlides" %>
-<%=image_tag "lcamel.png", class: "mySlides" %>
-<%=image_tag "lodose.png" , class: "mySlides" %>
-
-<%=image_tag "lex.png", class: "mySlides" %>
-<%=image_tag "lfive.png" , class: "mySlides" %>
-<%=image_tag "loJ.png" , class: "mySlides" %>
-<%=image_tag "loJolt.png" , class: "mySlides" %>
-<%=image_tag "lless.png", class: "mySlides" %>
-<%=image_tag "lmekal.png" , class: "mySlides" %>
-<%=image_tag "lsalat.png" , class: "mySlides" %>
-
-</div>
-
-
 <script>
   $('.shops').isotope({
   // options...
   itemSelector: '.shop-image',
   percentPosition: true,
-  masonry: {
-  
-  }
+  masonry: {}
   });
-
-  
-$(document).ready(function(){
-  $('.slick').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
-    dots: true
-  });
-});
 	
 
- 
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+/*
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
   }
-}
+*/
 </script>
