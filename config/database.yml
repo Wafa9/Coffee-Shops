@@ -26,4 +26,4 @@ production:
   encoding: unicode
   database: CoffeeShops_production
   username: CoffeeShops
-  password: <%= ENV["PARTYAPP_PASSWORD"] %>
+  password: <%= ENV["COFFEESHOPS_PASSWORD"] %>
