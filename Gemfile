@@ -12,6 +12,9 @@ gem 'cloudinary'
 gem 'rest-client', '~> 2.0'
 gem 'carrierwave'
 
+gem 'rack-cors', require: 'rack/cors'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
 # Use Puma as the app server

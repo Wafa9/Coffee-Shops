@@ -17,6 +17,11 @@
     <div class="header">
       <%= render partial: 'layouts/nav' %>
       <%= image_tag "logo1.jpg",class:"logo"%>
+      <div class="search">
+        <form action="/search" method="GET" class="search-form">
+          <input id="term" name="term" type="text" placeholder="Search for Coffee Shops" class="search-bar">
+        </form>
+      </div>
     </div>
     <%= yield %>
   </body>

@@ -18,4 +18,9 @@ class PagesController < ApplicationController
       @products_match.push(product) if product.name.downcase.include?(@term)
     end
   end
+
+  def api
+    shop = Shop.all
+    render json: shop.as_json(include: [:products])
+  end
 end

@@ -7,12 +7,14 @@
   <div class="prodect-section">
     <div class="all-cards">
       <% @shops_match.each do |shop| %>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <%= cl_image_tag shop.logo, class: "card-img-top"%>
-            <h5 class="card-title"><%= shop.name %></h5>
+        <a href="/shops/<%= shop.id %>">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <%= cl_image_tag shop.logo, class: "card-img-top"%>
+              <h5 class="card-title"><%= shop.name %></h5>
+            </div>
           </div>
-        </div>
+        </a>
       <% end %>
     </div>
   </div>
@@ -25,12 +27,14 @@
   <div class="prodect-section">
     <div class="all-cards">
       <% @products_match.each do |p| %>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <%= cl_image_tag p.image, class: "card-img-top"%>
-            <h5 class="card-title"><%= p.name %></h5>
+        <a href="/shops/<%= p.shop.id %>">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <%= cl_image_tag p.image, class: "card-img-top"%>
+              <h5 class="card-title"><%= p.name %></h5>
+            </div>
           </div>
-        </div>
+        </a>
       <% end %>
     </div>
   </div>

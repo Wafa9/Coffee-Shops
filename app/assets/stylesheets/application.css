@@ -14,173 +14,194 @@
  *= require_self
  */
 * {
-  font-family: "Shadows Into Light", cursive;
-  margin: 0;
-  padding: 0;
+	font-family: "Shadows Into Light", cursive;
+	margin: 0;
+	padding: 0;
 }
 .header {
-  height: 100px;
-  font-family: "Shadows Into Light", cursive;
-  font-size: 30px;
-  color: white;
-  margin: 0;
-  background: black;
+	height: 100px;
+	font-family: "Shadows Into Light", cursive;
+	font-size: 30px;
+	color: white;
+	margin: 0;
+	background: black;
+	position: relative;
 }
+
 .logo {
-  width: 100px;
-  height: 100px;
+	width: 100px;
+	height: 100px;
 }
 .header a {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 .web-ul {
-  position: absolute;
-  left: 12%;
-  top: 8%;
+	position: absolute;
+	left: 12%;
+	bottom: 8%;
 
-  list-style-type: none;
-  color: bisque;
+	list-style-type: none;
+	color: bisque;
 }
 .web-ul li {
-  display: inline;
-  padding: 8px 16px;
+	display: inline;
+	padding: 8px 16px;
 }
 
 .shops {
-  background: rgba(181, 181, 181, 0.5);
-  /* width: 100%; */
-  overflow: hidden;
+	background: rgba(181, 181, 181, 0.5);
+	/* width: 100%; */
+	overflow: hidden;
 }
 .grid-sizer {
-  width: 33.33333333333333%;
+	width: 33.33333333333333%;
 }
 .shop-image {
-  width: calc(100% / 3 - 60px);
-  width: 33.3333333333333%;
-  opacity: 1;
-  transition: opacity 0.5s;
+	width: calc(100% / 3 - 60px);
+	width: 33.3333333333333%;
+	opacity: 1;
+	transition: opacity 0.5s;
 }
 .shop-image:hover {
-  opacity: 0.2;
+	opacity: 0.2;
 }
 
 @media (max-width: 800px) {
-  .grid-sizer {
-    width: 50%;
-  }
-  .shop-image {
-    width: 50%;
-  }
+	.grid-sizer {
+		width: 50%;
+	}
+	.shop-image {
+		width: 50%;
+	}
 }
 
 @media (max-width: 400px) {
-  .grid-sizer {
-    width: 100%;
-  }
-  .shop-image {
-    width: 100%;
-  }
+	.grid-sizer {
+		width: 100%;
+	}
+	.shop-image {
+		width: 100%;
+	}
 }
 .video {
-  width: 100%;
+	width: 100%;
 }
 
 #map {
-  height: 40%;
-  width: 40%;
+	height: 40%;
+	width: 40%;
 }
 /* Optional: Makes the sample page fill the window. */
 html,
 body {
-  height: 100%;
-  padding: 0;
+	height: 100%;
+	padding: 0;
 }
 
 div.field {
-  position: relative;
+	position: relative;
 }
 label {
-  display: block;
-  opacity: 0.5;
+	display: block;
+	opacity: 0.5;
 }
 .field label {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.3s;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
 }
 
 input {
-  margin-bottom: 20px;
-  outline: none;
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 1s;
+	margin-bottom: 20px;
+	outline: none;
+	background: rgba(255, 255, 255, 0.1);
+	transition: all 1s;
 }
 
 input:not([type="file"]) {
-  border: none;
-  border-bottom: 2px solid black;
+	border: none;
+	border-bottom: 2px solid black;
 }
 
 input[type="file"] {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 input:not(:placeholder-shown):not([type="file"]) + label,
 input:focus + label {
-  margin-top: -20px;
-  opacity: 1;
+	margin-top: -20px;
+	opacity: 1;
 }
 
 input::placeholder {
-  opacity: 0;
+	opacity: 0;
 }
 
 input:focus:invalid:not([type="file"]) {
-  background: rgba(255, 0, 0, 0.1);
+	background: rgba(255, 0, 0, 0.1);
 }
 
 input:focus:valid:not([type="file"]) {
-  background: rgba(0, 255, 0, 0.1);
+	background: rgba(0, 255, 0, 0.1);
 }
 
 .button {
-  background: wheat;
-  height: 2.75rem;
-  margin: 1em auto auto;
-  padding: 0 5px;
+	background: wheat;
+	height: 2.75rem;
+	margin: 1em auto auto;
+	padding: 0 5px;
 }
 .button:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .form {
-  border: solid 2px gray;
-  width: 60%;
-  position: relative;
-  align-content: center;
-  padding: 80px;
-  background: rgba(94, 93, 93, 0.1);
+	border: solid 2px gray;
+	width: 60%;
+	position: relative;
+	align-content: center;
+	padding: 80px;
+	background: rgba(94, 93, 93, 0.1);
 }
 .img-circle {
-  max-width: 100%;
-  border-radius: 50%;
+	max-width: 100%;
+	border-radius: 50%;
 }
 .shop_info {
-  margin: 10px;
-  display: inline;
+	margin: 10px;
+	display: inline;
 }
 .card {
-  display: inline;
+	display: inline;
 }
 
 .all-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .search {
-  right: 2%;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.search-bar {
+	padding: 0;
+	height: 40px;
+	text-align: center;
+	background-color: white;
+	color: white;
+	border-radius: 50px;
+}
+/* .search-bar:focus {
+	color: white;
+} */
+.search-bar::placeholder {
+	text-align: center;
+	font-size: 20px;
+	opacity: 1;
 }
