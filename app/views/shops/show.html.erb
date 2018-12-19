@@ -1,9 +1,11 @@
 <div class="shop_info">
   <%= cl_image_tag @shop.logo,class:"img-circle"  %>
   <h2 style="font-width: bold;"><%= @shop.name %></h2>
-  <div class="card" style="width: 18rem;">
-    <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
-  </div>
+  <% if user_signed_in? && current_user.is_admin? %>
+    <div class="card" style="width: 18rem;">
+      <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
+    </div>
+  <% end %>
   <div class="prodect-section">
     <div class="all-cards">
       <% @shop.products.each do |p| %>
@@ -11,7 +13,9 @@
           <div class="card-body">
             <%= cl_image_tag p.image, class: "card-img-top"%>
             <h5 class="card-title"><%= p.name %></h5>
-            <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
+            <% user_signed_in? && current_user.is_admin? %>
+              <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
+            <% end %>
           </div>
         </div>
       <% end %>
