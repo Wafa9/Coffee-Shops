@@ -7,7 +7,6 @@
   <div class="prodect-section">
     <div class="all-cards">
       <% @shops_match.each do |shop| %>
-        <li><%= link_to shop.name, shop %></li>
         <div class="card" style="width: 18rem;">
           <div class="card-body">
             <%= cl_image_tag shop.logo, class: "card-img-top"%>
