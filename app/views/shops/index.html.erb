@@ -7,11 +7,16 @@
 <% if user_signed_in? && current_user.is_admin? %>
   <%= link_to 'Add New Shop', new_shop_path %>
 <% end %>
-<% @shops.each do |s| %>
-  <div class="card" style="width: 18rem;">
-    <%= cl_image_tag s.logo, class: "card-img-top"%>
-    <div class="card-body">
-      <h5 class="card-title"><%= link_to s.name, s %></h5>
+<div class="all-cards">
+  <% @shops.each do |s| %>
+    <div class="card" style="width: 18rem;">
+      <%= cl_image_tag s.logo, class: "card-img-top"%>
+      <div class="card-body">
+        <h5 class="card-title"><%= link_to s.name, s %></h5>
+      </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>
+<script>
+  ScrollReveal().reveal('.card',{ delay: 50 });
+</script>
