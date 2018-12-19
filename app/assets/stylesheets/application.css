@@ -154,7 +154,8 @@ input:focus:valid:not([type="file"]) {
 
 .form {
   border: solid 2px gray;
-  position: fixed;
+  width: 60%;
+  position: relative;
   align-content: center;
   padding: 80px;
   background: rgba(94, 93, 93, 0.1);
