@@ -181,3 +181,6 @@ input:focus:valid:not([type="file"]) {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.search {
+  right: 2%;
+}

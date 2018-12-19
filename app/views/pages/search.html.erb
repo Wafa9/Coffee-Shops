@@ -1,25 +1,37 @@
 <h2>Results for: <%= @term %></h2>
-
 <%# Shops Results %>
-<h3>Shops</h3>
+<h1>Shops</h1>
 <% if @shops_match.empty? %>
   <p>No match found</p>
 <% else %>
-<ul>
-  <% @shops_match.each do |shop| %>
-    <li><%= link_to shop.name, shop %></li>
-  <% end %>
-</ul>
+  <div class="prodect-section">
+    <div class="all-cards">
+      <% @shops_match.each do |shop| %>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <%= cl_image_tag shop.logo, class: "card-img-top"%>
+            <h5 class="card-title"><%= shop.name %></h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 <% end %>
-
 <%# Products Results %>
-<h3>Products</h3>
+<h1>Products</h1>
 <% if @products_match.empty? %>
   <p>No match found</p>
 <% else %>
-<ul>
-  <% @products_match.each do |product| %>
-    <li><%= link_to product.name, product.shop %></li>
-  <% end %>
-</ul>
+  <div class="prodect-section">
+    <div class="all-cards">
+      <% @products_match.each do |p| %>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <%= cl_image_tag p.image, class: "card-img-top"%>
+            <h5 class="card-title"><%= p.name %></h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 <% end %>
