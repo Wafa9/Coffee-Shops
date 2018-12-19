@@ -1,18 +1,29 @@
-<div>
-  <%= link_to 'Edit', edit_shop_path %>
-  <h2><%= @shop.name %></h2>
-  <%= cl_image_tag @shop.logo %>
+<div class="shop_info">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <%= cl_image_tag @shop.logo, class: "card-img-top" %>
+      <h5 class="card-title"><%= @shop.name %></h5>
+      <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
+    </div>
+  </div>
+</div>
+<div class="prodect-section">
+  <% @shop.products.each do |p| %>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <%= cl_image_tag p.image, class: "card-img-top" %>
+        <h5 class="card-title"><%= p.name %></h5>
+        <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
+      </div>
+    </div>
+  <% end %>
+  <% if user_signed_in? && current_user.is_admin? %>
+    <div class="new-product">
+      <%= render partial: 'products/form' %>
+    </div>
+  <% end %>
 </div>
 <div id="map"></div>
-<% @shop.products.each do |p| %>
-  <p><%= p.name %></p>
-  <p><%= p.description %></p>
-<% end %>
-<% if user_signed_in? && current_user.is_admin? %>
-  <div class="new-product">
-    <%= render partial: 'products/form' %>
-  </div>
-<% end %>
 <script>
   var map;
   function initMap() {
