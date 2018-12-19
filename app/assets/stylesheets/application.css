@@ -124,7 +124,11 @@ input:not([type="file"]) {
   border-bottom: 2px solid black;
 }
 
-input:not(:placeholder-shown) + label,
+input[type="file"] {
+  margin-top: 20px;
+}
+
+input:not(:placeholder-shown):not([type="file"]) + label,
 input:focus + label {
   margin-top: -20px;
   opacity: 1;
@@ -159,4 +163,21 @@ input:focus:valid:not([type="file"]) {
   align-content: center;
   padding: 80px;
   background: rgba(94, 93, 93, 0.1);
+}
+.img-circle {
+  max-width: 100%;
+  border-radius: 50%;
+}
+.shop_info {
+  margin: 10px;
+  display: inline;
+}
+.card {
+  display: inline;
+}
+
+.all-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

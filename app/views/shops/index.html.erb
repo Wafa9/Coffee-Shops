@@ -1,19 +1,24 @@
-
 <div>
   <form action="/search" method="GET" class="search-form">
     <input id="term" name="term" type="text" placeholder="Search for Coffee Shop" class="search-bar">
   </form>
 </div>
-
 <h1>All Shops</h1>
-
 <% if user_signed_in? && current_user.is_admin? %>
   <%= link_to 'Add New Shop', new_shop_path %>
 <% end %>
-<ul>
+<div class="all-cards">
   <% @shops.each do |s| %>
-    <li>
-      <%= link_to s.name, s %>
-    </li>
+    <a href="/shops/<%= s.id %>">
+      <div class="card" style="width: 18rem;">
+        <%= cl_image_tag s.logo, class: "card-img-top"%>
+        <div class="card-body">
+          <h5 class="card-title"><%= s.name %></h5>
+        </div>
+      </div>
+    </a>
   <% end %>
-</ul>
+</div>
+<script>
+  ScrollReveal().reveal('.card',{ delay: 50 });
+</script>
