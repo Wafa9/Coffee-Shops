@@ -13,7 +13,14 @@
 
 <div class="grid">
   <div class="shops">
+<<<<<<< HEAD
      <div class="overlay">
+=======
+    <% @shops.each do |shop| %>
+      <%= cl_image_tag shop.logo, class: "shop-image" %>
+    <% end %>
+    <%# cl_image_tag @shop.logo %>
+>>>>>>> d8903845dae3f1df711058a9aa47829168598dd5
     <%=image_tag "12.png", id: "12-image" ,class: "shop-image"%>
     <div class="text">12 Cups</div>
   </div>
