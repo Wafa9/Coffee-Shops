@@ -1,36 +1,33 @@
 <div class="shop_info">
+  <%= cl_image_tag @shop.logo,class:"img-circle"  %>
+  <h2 style="font-width: bold;"><%= @shop.name %></h2>
   <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <%= cl_image_tag @shop.logo,class:"img-circle"  %>
-      <h5 class="card-title"><%= @shop.name %></h5>
-      <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
-    </div>
+    <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
   </div>
-</div>
-<div class="prodect-section">
-  <% @shop.products.each do |p| %>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <%= cl_image_tag p.image, class: "card-img-top"%>
-        <h5 class="card-title"><%= p.name %></h5>
-        <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
+  <div class="prodect-section">
+    <% @shop.products.each do |p| %>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <%= cl_image_tag p.image, class: "card-img-top"%>
+          <h5 class="card-title"><%= p.name %></h5>
+          <a href="<%= edit_shop_path %>" class="btn btn-primary">Edit</a>
+        </div>
       </div>
-    </div>
-  <% end %>
-  <% if user_signed_in? && current_user.is_admin? %>
-    <div class="new-product">
-      <%= render partial: 'products/form' %>
-    </div>
-  <% end %>
-</div>
-<div id="map"></div>
-<script>
-  var map;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: <%= @shop.latitude %>, lng: <%= @shop.longitude %>},
-      zoom: 8
-    });
-  }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_k6CbjckRGweXSChHuMKc1tO3SqMn_4o&callback=initMap" async defer></script>
+    <% end %>
+    <% if user_signed_in? && current_user.is_admin? %>
+      <div class="new-product">
+        <%= render partial: 'products/form' %>
+      </div>
+    <% end %>
+  </div>
+  <div id="map"></div>
+  <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: <%= @shop.latitude %>, lng: <%= @shop.longitude %>},
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_k6CbjckRGweXSChHuMKc1tO3SqMn_4o&callback=initMap" async defer></script>

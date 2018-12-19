@@ -7,18 +7,11 @@
 <% if user_signed_in? && current_user.is_admin? %>
   <%= link_to 'Add New Shop', new_shop_path %>
 <% end %>
-<ul>
-  <% @shops.each do |s| %>
-    <li>
-      <%= link_to s.name, s %>
-    </li>
-  <% end %>
-</ul>
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title"><%= link_to s.name, s %></h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<% @shops.each do |s| %>
+  <div class="card" style="width: 18rem;">
+    <%= cl_image_tag s.logo, class: "card-img-top"%>
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to s.name, s %></h5>
+    </div>
   </div>
-</div>
+<% end %>

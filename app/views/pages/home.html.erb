@@ -1,15 +1,12 @@
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <div>
-  <%# <vido autoplay loop muted>
-    <source src="caff.mp4" type="vido/mov">
-  </vido> %>
   <%= video_tag "cafe1.mp4", autoplay: :autoplay, muted: :muted ,class: "video" %>
 </div>
 <div class="grid">
   <div class="shops">
     <% @shops.each do |shop| %>
       <a href="/shops/<%= shop.id %>">
-      <%= cl_image_tag shop.logo ,class: "shop-image" %>
+        <%= cl_image_tag shop.logo ,class: "shop-image" %>
       </a>
     <% end %>
     <%# image_tag "12.png", id: "12-image" ,class: "shop-image"%>
