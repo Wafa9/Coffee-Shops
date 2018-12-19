@@ -1,31 +1,34 @@
-<%= form_for @shop do |f| %>
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name  %>
-  </div>
-  <div class="field">
-    <%= f.label :logo %>
-    <%= f.file_field :logo  %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %>
-    <%= f.text_field :phone  %>
-  </div>
-  <div class="field">
-    <%= f.label :website %>
-    <%= f.text_field :website  %>
-  </div>
-  <div class="field">
-    <%= f.label :twitter %>
-    <%= f.text_field :twitter   %>
-  </div>
-  <div class="field">
-    <%= f.label :instagram %>
-    <%= f.text_field :instagram %>
-  </div>
-  <div class="field">
-    <%= f.label :address %>
-    <%= f.text_field :address %>
-  </div>
-  <%= f.submit class:"button" %>
-<% end %>
+<div class="form">
+
+  <%= form_for @shop do |f| %>
+    <div class="field">
+      <%= f.text_field :name, placeholder: "name"  %>
+      <%= f.label :name %>
+    </div>
+    <div class="">
+      <%= f.label :logo%>
+      <%= f.file_field :logo  %>
+    </div>
+    <div class="field">
+      <%= f.text_field :phone, placeholder: "phone"  %>
+      <%= f.label :phone %>
+    </div>
+    <div class="field">
+      <%= f.url_field :website, placeholder: "website"  %>
+      <%= f.label :website %>
+    </div>
+    <div class="field">
+      <%= f.url_field :twitter, placeholder: "twitter"   %>
+      <%= f.label :twitter %>
+    </div>
+    <div class="field">
+      <%= f.url_field :instagram, placeholder: "instagram" %>
+      <%= f.label :instagram %>
+    </div>
+    <div class="field">
+      <%= f.text_field :address, placeholder: "address" %>
+      <%= f.label :address %>
+    </div>
+    <%= f.submit class:"button" %>
+  <% end %>
+</div>

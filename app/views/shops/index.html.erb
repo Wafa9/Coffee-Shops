@@ -1,4 +1,12 @@
+
+<div>
+  <form action="/search" method="GET" class="search-form">
+    <input id="term" name="term" type="text" placeholder="Search for Coffee Shop" class="search-bar">
+  </form>
+</div>
+
 <h1>All Shops</h1>
+
 <% if user_signed_in? && current_user.is_admin? %>
   <%= link_to 'Add New Shop', new_shop_path %>
 <% end %>

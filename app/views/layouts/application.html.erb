@@ -6,9 +6,11 @@
     <%= csp_meta_tag %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <%#
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
+    %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -16,23 +18,7 @@
   <body>
     <div class="header">
       <%= render partial: 'layouts/nav' %>
-      <%#
-      <div>
-        <vido autoplay loop muted>
-          <source src="caff.mp4" type="vido/mov">
-        </vido> 
-      </div>
-      %>
-    </div>
-    <div>
-    <%#
-      <h1 class="web-name">Mazaj</h1>
-      <p>Find the coffee shop that suits you.</p>
-    %>
-      <form action="/search" method="GET" class="search-form">
-        <input id="term" name="term" type="text" placeholder="Search for Coffee Shop" class="search-bar">
-      </form>
-      <%# <input type="text" name="lname" > %>
+      <%=image_tag "logo1.jpg",class:"logo"%>
     </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>

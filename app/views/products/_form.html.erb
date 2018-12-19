@@ -1,15 +1,15 @@
-<%= form_for @product do |f| %>
-
-  <%= f.hidden_field :shop_id, :value => @shop.id %>
-  
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :description %>
-    <%= f.text_field :description %>
-  </div>
-  <%= f.submit %>
-<% end %>
+<div class="form">
+  <p>Add New Product</p>
+  <%= form_for @product do |f| %>
+    <%= f.hidden_field :shop_id, :value => @shop.id %>
+    <div class="field">
+      <%= f.text_field :name ,placeholder:"name" %>
+      <%= f.label :name %>
+    </div>
+    <div class="field">
+      <%= f.text_field :description ,placeholder:"placeholder:" %>
+      <%= f.label :description %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>

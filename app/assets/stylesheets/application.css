@@ -12,82 +12,46 @@
  *
  *= require_tree .
  *= require_self
-*/
-
-.container:hover .overlay {
-	opacity: 0.5;
-}
-
-.text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-
-.header {
-	/* background-size: cover;
-	height: 700px;
-	background-repeat: no-repeat; */
+ */
+* {
 	font-family: "Shadows Into Light", cursive;
-	font-size: 30px;
-	color: #e9967a;
-	margin: 0;
-	/* opacity: 0.8; */
-}
-#logo1 {
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	left: 1150px;
-}
-
-.web-ul {
-	/* position: absolute;
-    right: 5%;
-    list-style-type: none;
-    color: bisque; */
-
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
-	background-color: black;
+}
+.header {
 	height: 100px;
-	width: 1300px;
-}
-
-.web-ul li {
-	/* display: inline;
-  padding: 8px 16px; */
-	float: left;
-}
-li a {
-	display: block;
+	font-family: "Shadows Into Light", cursive;
+	font-size: 30px;
 	color: white;
-	text-align: center;
-	padding: 14px 16px;
+	margin: 0;
+	background: black;
+
+	/* opacity: 0.8; */
+}
+.logo {
+	width: 100px;
+	height: 100px;
+}
+.header a {
+	color: white;
 	text-decoration: none;
 }
+.web-ul {
+	position: absolute;
+	left: 12%;
+	top: 8%;
 
-li a:hover:not(.active) {
-	/* background-color: #111; */
-	background-color: white;
-	color: black;
+	list-style-type: none;
+	color: bisque;
+}
+.web-ul li {
+	display: inline;
+	padding: 8px 16px;
 }
 
-.active {
-	background-color: #4caf50;
-}
 .shops {
 	background: rgba(181, 181, 181, 0.5);
-	top: 110px;
-	left: 40px;
+	/* width: 100%; */
 }
 
 .shop-image {
@@ -106,30 +70,86 @@ li a:hover:not(.active) {
 		width: calc(50% - 40px);
 	}
 }
-
-.slick {
-	width: 250px;
-	margin: 0 auto;
-	/* margin-bottom: 130px; */
+.video {
+	width: 100%;
 }
 
-.slick img {
-	max-height: 250px;
+#map {
+	height: 40%;
+	width: 40%;
+	/* height: 100%;
+  margin: 30px;
+  padding: 0; */
+}
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+	height: 100%;
+	/* margin: 30px; */
+	padding: 0;
+}
+
+div.field {
 	position: relative;
-	/* top: 150px; */
-	border-radius: 20%;
 }
-
-body .slick-next:before,
-body .slick-next:after {
-	color: black;
+label {
+	display: block;
+	/* transform: scale(1); */
+	opacity: 0.5;
 }
-
-.slick-dots {
+.field label {
+	display: block;
 	position: absolute;
-	top: 350px;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
 }
 
-.grid {
-	margin-bottom: 130px;
+input {
+	margin-bottom: 20px;
+	outline: none;
+	background: rgba(255, 255, 255, 0.1);
+	transition: all 1s;
+}
+
+input:not([type="file"]) {
+	border: none;
+	border-bottom: 2px solid black;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+	margin-top: -20px;
+	/* transform: scale(0.8); */
+	opacity: 1;
+}
+
+input::placeholder {
+	opacity: 0;
+}
+
+input:focus:invalid:not([type="file"]) {
+	background: rgba(255, 0, 0, 0.1);
+}
+
+input:focus:valid:not([type="file"]) {
+	background: rgba(0, 255, 0, 0.1);
+}
+
+.button {
+	background: wheat;
+	height: 2.75rem;
+	margin: 1em auto auto;
+	padding: 0 5px;
+}
+.button:hover {
+	cursor: pointer;
+}
+
+.form {
+	border: solid 2px gray;
+	position: fixed;
+	align-content: center;
+	padding: 80px;
+	background: rgba(94, 93, 93, 0.1);
 }
