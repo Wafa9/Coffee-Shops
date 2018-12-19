@@ -1,6 +1,8 @@
-<%= link_to 'Edit', edit_shop_path %>
-<h2><%= @shop.name %></h2>
-<%= cl_image_tag @shop.logo %>
+<div>
+  <%= link_to 'Edit', edit_shop_path %>
+  <h2><%= @shop.name %></h2>
+  <%= cl_image_tag @shop.logo %>
+</div>
 <div id="map"></div>
 <% @shop.products.each do |p| %>
   <p><%= p.name %></p>
