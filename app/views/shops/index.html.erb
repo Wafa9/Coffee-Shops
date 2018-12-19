@@ -1,12 +1,9 @@
-
 <div>
   <form action="/search" method="GET" class="search-form">
     <input id="term" name="term" type="text" placeholder="Search for Coffee Shop" class="search-bar">
   </form>
 </div>
-
 <h1>All Shops</h1>
-
 <% if user_signed_in? && current_user.is_admin? %>
   <%= link_to 'Add New Shop', new_shop_path %>
 <% end %>
@@ -17,3 +14,11 @@
     </li>
   <% end %>
 </ul>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><%= link_to s.name, s %></h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
