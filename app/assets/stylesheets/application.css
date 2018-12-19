@@ -178,6 +178,9 @@ input:focus:valid:not([type="file"]) {
 
 .all-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+.search {
+  right: 2%;
 }
