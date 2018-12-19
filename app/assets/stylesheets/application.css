@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+* {
+  font-family: "Shadows Into Light", cursive;
+}
 .header {
   /* background-image: url("940ec697671b181d54f2ee200fed5e74.png"); */
   /* background-size: cover; */
@@ -77,4 +80,57 @@ body {
   background: wheat;
   height: 2.75rem;
   margin: 1em auto auto;
+}
+
+div.field {
+  position: relative;
+}
+label {
+  display: block;
+  /* transform: scale(1); */
+  opacity: 0.5;
+}
+.field label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+input {
+  margin-bottom: 20px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s;
+}
+
+input:not([type="file"]) {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  margin-top: -20px;
+  /* transform: scale(0.8); */
+  opacity: 1;
+}
+
+input::placeholder {
+  opacity: 0;
+}
+
+input:focus:invalid:not([type="file"]) {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+input:focus:valid:not([type="file"]) {
+  background: rgba(0, 255, 0, 0.1);
+}
+.form {
+  border: solid 2px gray;
+  position: fixed;
+  align-content: center;
+  padding: 80px;
 }

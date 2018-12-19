@@ -8,7 +8,6 @@
 <% end %>
 <% if user_signed_in? && current_user.is_admin? %>
   <div class="new-product">
-    <p>Add New Products</p>
     <%= render partial: 'products/form' %>
   </div>
 <% end %>
