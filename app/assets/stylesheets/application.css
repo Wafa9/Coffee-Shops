@@ -52,22 +52,38 @@
 .shops {
 	background: rgba(181, 181, 181, 0.5);
 	/* width: 100%; */
+	overflow: hidden;
 }
-
+.grid-sizer {
+	width: 33.33333333333333%;
+}
 .shop-image {
 	width: calc(100% / 3 - 60px);
+	width: 33.3333333333333%;
 	opacity: 1;
 	transition: opacity 0.5s;
-	float: left;
-	margin: 4px;
+	/* float: left; */
+	/* margin: 4px; */
 }
 .shop-image:hover {
 	opacity: 0.2;
 }
 
 @media (max-width: 800px) {
+	.grid-sizer {
+		width: 50%;
+	}
 	.shop-image {
-		width: calc(50% - 40px);
+		width: 50%;
+	}
+}
+
+@media (max-width: 400px) {
+	.grid-sizer {
+		width: 100%;
+	}
+	.shop-image {
+		width: 100%;
 	}
 }
 .video {

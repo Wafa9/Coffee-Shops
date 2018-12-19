@@ -23,16 +23,32 @@
     <%=image_tag "jolt.png", id: "jolt-image" ,class: "shop-image"%>
     <%=image_tag "cAF.png", id: "CAF-image" ,class: "shop-image"%>
     <%=image_tag "mekyal.png", id: "mekyal-image" ,class: "shop-image"%>
+    <div class="grid-sizer"></div>
   </div>
 </div>
 <script>
-  $('.shops').isotope({
-  // options...
-  itemSelector: '.shop-image',
-  percentPosition: true,
-  masonry: {
-  // columnWidth: 40,
-  //isFitWidth: true
-  }
+$(document).on("turbolinks:load", function () {
+
+
+  var $grid = $('.shops').isotope({
+    // options...
+    itemSelector: '.shop-image',
+    isFitWidth: true,
+    columnWidth: 300,
+    initLayout: false,
+    percentPosition: true ,
+    masonry: {
+      columnWidth: ".grid-sizer"
+    }
   });
+  // bind event
+  $grid.isotope( 'on', 'arrangeComplete', function() {
+    console.log('arrange is complete');
+  });
+  // manually trigger initial layout
+  setTimeout(function() {
+    $grid.isotope();
+
+  }, 100)
+});
 </script>
