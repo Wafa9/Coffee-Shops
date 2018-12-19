@@ -14,4 +14,3 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-ScrollReveal().reveal(".card", { delay: 50 });
