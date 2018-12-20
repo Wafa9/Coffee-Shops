@@ -12,11 +12,13 @@ Mazaj is an application that gathers all the local coffee shops information and 
 
 ## A basic built using:
 * ruby rails
-* APIs
 * cloudainary
 * bootstrap
 * isotope
 * ScrollReveal
+* Hoogle map api
+* Google map api
+* Gcoder
 
 
 
