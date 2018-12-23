@@ -1,24 +1,43 @@
-# README
+# مزاج Mazaj
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+![View The Demo](https://i.imgur.com/5nYHc7N.jpg)
 
-* Ruby version
+## About
+Mazaj is an application that gathers all the local coffee shops information and provides an API to make it easier for other creative developers to create apps using our database.
 
-* System dependencies
+ 
+[Visit Our Site](https://afternoon-crag-83222.herokuapp.com)
 
-* Configuration
 
-* Database creation
+## A basic built using:
+* ruby rails
+* cloudainary
+* bootstrap
+* isotope
+* ScrollReveal
+* Hoogle map api
+* Google map api
+* Gcoder
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+
+
+## Upcoming Features:
+
+* We are planning to expand to other regions like Dammam and Jeddah
+* Optimizing API to handle more specific requests
+
+
+
+
+## Credit :
+* Photoshop CC
+* imovie
+
+
+
+
